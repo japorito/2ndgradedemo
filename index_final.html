@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>2nd Grader Demo</title>
+
+    <script src="https://unpkg.com/vue@^2.5/dist/vue.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <main id="main" v-cloak>
+        <nav>
+            <a v-for="link in links" @click.prevent="switchPart(link.part)">{{ link.description }}</a>
+        </nav>
+
+        <h1>{{ pageTitle }}</h1>
+        <img :src="teacher.image" v-if="teacher.image">
+        <p v-if="teacher.description">{{ teacher.description }}</p>
+        <img :src="picture" class="studentPictures" v-for="picture in pictures">
+        <p>{{ classDescription }}</p>
+    </main>
+</body>
+</html>

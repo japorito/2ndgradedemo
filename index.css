@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    /* background-color: ???; */
+    font-family: sans-serif;
+    /* color: ???; */
+}
+
+main {
+    min-height: 100%;
+    max-width: 66%;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    left: 0px;
+}
+
+nav > a {
+    display: block;
+    padding: 15px;
+    /* background-color: ??? */
+    /* color: ??? */
+}
+
+nav > a:hover {
+    background: black;
+    color: white;
+}
+
+.studentPictures {
+    margin: 10px;
+}
+
+[v-cloak] {
+    display: none;
+}
