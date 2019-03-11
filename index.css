@@ -21,8 +21,8 @@ nav {
 nav > a {
     display: block;
     padding: 15px;
-    /* background-color: ??? */
-    /* color: ??? */
+    /* background-color: ???; */
+    /* color: ???; */
 }
 
 nav > a:hover {

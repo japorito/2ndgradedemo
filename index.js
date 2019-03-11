@@ -1,19 +1,26 @@
 'use strict';
 
 window.onload = function() {
-    const wintersElementary = {};
+    const waggonerElementary = {};
 
-    wintersElementary['room29'] = {
+    waggonerElementary['room29'] = {
         'pageTitle' : 'Miss Wells\' Second Graders',
         'classDescription' : '', // ???
         'teacher' : {
             'image' : null,
             'description' : '' // ???
         },
-        'pictures' : []
+        'pictures' : [
+            'images/room29-1.JPG',
+            'images/room29-2.JPG',
+            'images/room29-3.JPG',
+            'images/room29-4.JPG',
+            'images/room29-5.JPG',
+            'images/room29-6.JPG'
+        ]
     };
 
-    wintersElementary['playground'] = {
+    waggonerElementary['playground'] = {
         'pageTitle' : 'The Playground!',
         'classDescription' : '',
         'teacher' : {
@@ -23,7 +30,7 @@ window.onload = function() {
         'pictures' : []
     };
 
-    wintersElementary['school'] = {
+    waggonerElementary['school'] = {
         'pageTitle' : 'Winters Elementary School',
         'classDescription' : '',
         'teacher' : {
@@ -36,14 +43,14 @@ window.onload = function() {
     const model = new Vue({
         el : '#main',
 
-        data : Object.assign({}, wintersElementary.room29),
+        data : Object.assign({}, waggonerElementary.room29),
 
         methods: {
             switchPart : function(part) {
-                this.pageTitle = wintersElementary[part].pageTitle;
-                this.classDescription = wintersElementary[part].classDescription;
-                this.teacher = wintersElementary[part].teacher;
-                this.pictures = wintersElementary[part].pictures;
+                this.pageTitle = waggonerElementary[part].pageTitle;
+                this.classDescription = waggonerElementary[part].classDescription;
+                this.teacher = waggonerElementary[part].teacher;
+                this.pictures = waggonerElementary[part].pictures;
             }
         },
 
