@@ -32,6 +32,12 @@ nav > a:hover {
 
 .studentPictures {
     margin: 10px;
+    max-width: 30%;
+}
+
+.teacherPicture {
+    margin: 0 auto;
+    max-width: 66%;
 }
 
 [v-cloak] {

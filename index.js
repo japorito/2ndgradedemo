@@ -7,7 +7,7 @@ window.onload = function() {
         'pageTitle' : 'Miss Wells\' Second Graders',
         'classDescription' : '', // ???
         'teacher' : {
-            'image' : null,
+            'image' : null, // ???
             'description' : '' // ???
         },
         'pictures' : [
@@ -43,7 +43,23 @@ window.onload = function() {
     const model = new Vue({
         el : '#main',
 
-        data : Object.assign({}, waggonerElementary.room29),
+        data : Object.assign({
+                                 links : [
+                                     // {
+                                     //     description : 'Room 29',
+                                     //     part : 'room29'
+                                     // },
+                                     // {
+                                     //     description : 'Winters Elementary School',
+                                     //     part : 'school'
+                                     // },
+                                     // {
+                                     //     description : 'The Playground',
+                                     //     part : 'playground'
+                                     // }
+                                 ]
+                             },
+                             waggonerElementary.room29),
 
         methods: {
             switchPart : function(part) {
@@ -51,25 +67,6 @@ window.onload = function() {
                 this.classDescription = waggonerElementary[part].classDescription;
                 this.teacher = waggonerElementary[part].teacher;
                 this.pictures = waggonerElementary[part].pictures;
-            }
-        },
-
-        computed : {
-            'links': function() {
-                return [
-                    // {
-                    //     description : 'Room 29',
-                    //     part : 'room29'
-                    // },
-                    // {
-                    //     description : 'Winters Elementary School',
-                    //     part : 'school'
-                    // },
-                    // {
-                    //     description : 'The Playground',
-                    //     part : 'playground'
-                    // },
-                ];
             }
         }
     });
