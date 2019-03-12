@@ -27,7 +27,13 @@ window.onload = function() {
             'image' : null,
             'description' : null
         },
-        'pictures' : []
+        'pictures' : [
+            'images/playground-3.JPG',
+            'images/playground-4.JPG',
+            'images/playground-5.JPG',
+            'images/playground-1.JPG',
+            'images/playground-2.JPG'
+        ]
     };
 
     waggonerElementary['school'] = {
