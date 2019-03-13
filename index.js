@@ -56,7 +56,7 @@ window.onload = function() {
                                      //     part : 'room29'
                                      // },
                                      // {
-                                     //     description : 'Winters Elementary School',
+                                     //     description : 'Waggoner Elementary School',
                                      //     part : 'school'
                                      // },
                                      // {

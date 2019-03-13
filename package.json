@@ -1,0 +1,20 @@
+{
+  "name": "2ndgradedemo",
+  "version": "1.0.0",
+  "description": "Programming demonstration for second graders.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japorito/2ndgradedemo.git"
+  },
+  "author": "Jacob Saporito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/japorito/2ndgradedemo/issues"
+  },
+  "homepage": "https://github.com/japorito/2ndgradedemo",
+  "dependencies": {
+    "vue": "^2.6.8"
+  }
+}
